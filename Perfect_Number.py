@@ -1,12 +1,10 @@
 n=int(input())
-d=n
-b=1
-c=0
-for i in range(b,n):
+a=1
+b=0
+for i in range (a, n):
     if n%i==0:
-        c+=i
-if c==n:
+        b +=i
+if b==n:
     print("True")
 else:
     print("False")
-    
