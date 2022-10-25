@@ -1,0 +1,14 @@
+a=int(input())
+l=list(map(int,input().split()))
+e=0
+o=0
+for i in range(a):
+    if i%2==0:
+        e +=l[i]
+    else:
+        o+=l[i]
+c=abs(e-o)
+if c==0:
+    print("YES")
+else:
+    print("NO")
