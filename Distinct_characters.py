@@ -1,15 +1,20 @@
 a=input()
-d=a.lower()
-b=list(d.split(" "))
-s=""
-for i in b:
+b=a.lower()
+c=list(b.split(" "))
+s=''
+for i in c:
     s +=i
-f=[]
-for j in s:
-    if str(j) not in f:
-        f.append(j)
-g=sorted(f)
+f=''
+g=''
 h=''
-for k in g:
-    h +=k
+for j in  s:
+    if str(j) not in f:
+        f +=j
+for k in f:
+    if s.count(k)==1:
+        g +=str(k)
+l=sorted(g)
+for m in l:
+    h +=m
 print(h)
+    
