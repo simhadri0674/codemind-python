@@ -1,15 +1,18 @@
 a=int(input())
-l=[]
-while a:
-    r =a%10
-    l.append(r)
-    a=a//10
-l=l[::-1]
-for i in range(len(l)):
-    if l[i]==6:
-        l[i]=9
+b=a
+c=[]
+while b:
+    x=b%10
+    c.append(x)
+    b=b//10
+d=c[::-1]
+for i in range(len(d)):
+    if d[i]==6:
+        d[i]=9
         break
-s=""
-for i in l:
+s=''
+for i in d:
     s +=str(i)
-print(int(s))
+print(s)
+    
+    
