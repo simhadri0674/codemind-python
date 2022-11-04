@@ -1,13 +1,13 @@
 a,b=map(int,input().split())
 l=[]
 for i in range(a):
-    k=list(map(int,input().split()))
-    l.append(k)
-c=0
-for i in range(a):
-    for j in range(b):
-        if i==j or i+j==a-1:
-            c+=l[i][j]
-            #print(l[i][j])
-print(c)
-        
+    c=list(map(int,input().split()))
+    l.append(c)
+d=0
+for j in range(a):
+    for k in range(b):
+        if j==k or j+k==a-1 or j+k==b-1:
+            d +=l[k][j]
+print(d)
+            
+            
