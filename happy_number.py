@@ -1,15 +1,11 @@
 a=int(input())
 b=a
-s=0
+r=0
 while b:
-    r=b%10
-    s+=r*r
+    x=b%10
+    r+=x*x
     b=b//10
-    if b==0 and s>9:
-        b=s
-        s=0
-if s!=1:
-    print("False")
-else:
-    print("True")
-    
+    if b==0 and r>9:
+        b=r
+        r=0
+print(r==1)
